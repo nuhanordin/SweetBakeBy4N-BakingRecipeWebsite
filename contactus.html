@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact 4N</title>
+    <link rel="icon" href="image/logocircle.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <!------- Navigation Manu -------->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="image/logocircle.png" alt="4N LOGO"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideNav()"></i>
+                <ul>
+                    <li> <a href="index.html"> Home </a></li>
+                    <li> <a href="recipe.html"> Recipe </a></li>
+                    <li> <a href="tipstricks.html"> Tips & Tricks </a></li>
+                    <li> <a href="popular.html"> Popular </a></li>
+                    <li> <a href="aboutus.html"> About Us </a></li>
+                    <li> <a href="contactus.html"> Contact Us </a></li>
+                    <li>
+                        <form action="https://www.google.com/search" target="_blank">
+                            <input name="search" class="search" placeholder="Search">
+                            <button class="srch-btn">Search</button>
+                        </form>
+                    </li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showNav()"></i>
+        </nav>
+
+
+        <h1>Sweet Bake by 4N</h1><br><br>
+        <h2> Contact Us </h2>
+
+    </section>
+
+    <!------- Contact Us Content -------->
+    <section class="contactus">
+        <div class="row">
+            <div class="contact-left">
+                <div class="mediasocial-box">
+                    <div class="medsos">
+                        <h4> <u> Contact Us </u></h4>
+                        <a href="tel:+0903100312"><i class="fa fa-phone" style="font-size: 2.0em;"></i> 09-03100312
+                        </a><br><br>
+                        <a href="mailto:sweetbakeby4n@gmail.com"><i class="fa fa-envelope-o"
+                                style="font-size: 2.0em;"></i> Send Email </a><br><br>
+                        <h4> <u>Follow us on social media to know more </u></h4>
+                        <a href="https://www.facebook.com/sweetbakeby4n/"><i class="fa fa-facebook"
+                                style="font-size: 2.0em;"></i> Facebook </a><br><br>
+                        <a href="https://twitter.com/sweetbake4n"><i class="fa fa-twitter"
+                                style="font-size: 2.0em;"></i> Twitter </a><br><br>
+                        <a href="https://www.instagram.com/sweet_bake_4n/"><i class="fa fa-instagram"
+                                style="font-size: 2.0em;"></i> Instagram </a><br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-right">
+                <h1> Have a question, suggestion or comment? </h1>
+                <p> We have a dedicated team ready and waiting to make conversation with you. </p>
+
+                <div class="comment-box">
+                    <h3> Kindly hit us up! </h3>
+
+                    <form class="comment-form" action="#" onsubmit="msgFunction()">
+                        <input type="text" placeholder="First Name" required>
+                        <input type="text" placeholder="Last Name">
+                        <input type="email" placeholder="Email" required>
+                        <textarea rows="8" placeholder="Message" required></textarea>
+                        <button type="submit" class="hero-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!------- Call to Action -------->
+
+    <section class="cta">
+        <h1> Join our newsletter </h1>
+        <h4> Subscribe now to get new recipes from us! </h4>
+        
+        <form action="#" onsubmit="subscribeFunction()">
+        <input type="email" class="email" placeholder="  Email" required>
+        <button type="submit" class="hero-btn">Subscribe</button>
+        </form>
+    </section>
+
+
+    <!------- Footer -------->
+    <section class="footer">
+        <div class="icons">
+            <a href="https://www.facebook.com/sweetbakeby4n/"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/sweetbake4n"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/sweet_bake_4n/"><i class="fa fa-instagram"></i></a>
+            <a href="mailto:sweetbakeby4n@gmail.com"><i class="fa fa-envelope-o"></i></a>
+        </div>
+
+        <body onload="lastUpdate()">
+            <p style="color: white;">Last updated: <span id="demo"></span></p>
+        </body>
+
+        <p style="font-style: italic;"> Copyright &copy; 2023 with <i class="fa fa-heart-o"></i> by 4N </p>
+
+
+    </section>
+
+
+
+    <!------ Back to Top button ------->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+
+
+
+
+
+
+
+    <!------- JAVASCRIPT -------->
+    <script type="text/javascript" src="javascript.js"></script>
+
+
+    
+</body>
+
+</html>

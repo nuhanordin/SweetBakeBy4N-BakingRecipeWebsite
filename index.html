@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Bake by 4N</title>
+    <link rel="icon" href="image/logocircle.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <!------- Header -------->
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="image/logocircle.png" alt="4N LOGO"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideNav()"></i>
+                <ul>
+                    <li> <a href="index.html"> Home </a></li>
+                    <li> <a href="recipe.html"> Recipe </a></li>
+                    <li> <a href="tipstricks.html"> Tips & Tricks </a></li>
+                    <li> <a href="popular.html"> Popular </a></li>
+                    <li> <a href="aboutus.html"> About Us </a></li>
+                    <li> <a href="contactus.html"> Contact Us </a></li>
+                    <li>
+                        <form action="https://www.google.com/search" target="_blank">
+                            <input name="search" class="search" placeholder="Search">
+                            <button class="srch-btn">Search</button>
+                        </form>
+                    </li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showNav()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1> Sweet Bake by 4N </h1>
+            <p> Presented to everyone craving for sweet foods! </p>
+            <a href="" class="hero-btn"> Visit </a>
+        </div>
+    </section>
+
+    <!------- Recipe -------->
+    <section class="recipe">
+        <h1> Recipe Categories </h1>
+        <p> Categories of recipe you can choose to start with</p>
+
+        <div class="row">
+            <div class="recipe-col">
+                <h3> Cake & Cupcake </h3>
+                <a href="recipe.html"><img src="image/cakecupcake1.jpeg" alt="cake"></a>
+            </div>
+            <div class="recipe-col">
+                <h3> Cookie </h3>
+                <a href="recipe.html"><img src="image/cookies.jpeg" alt="cookie"></a>
+            </div>
+            <div class="recipe-col">
+                <h3> Pastry </h3>
+                <a href="recipe.html"><img src="image/pastry.jfif" alt="pastry"></a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!------- Popular -------->
+    <section class="popular">
+        <h1> Popular Picks </h1>
+        <p> The recipes that being the all time favorite </p>
+
+        <div class="row">
+            <div class="popular-col">
+                <img src="image/cheesetartpop.jpeg" alt="cheesetart">
+                <div class="layer">
+                    <a href="cheesetart.html">
+                        <h3> Cheese Tart </h3>
+                    </a>
+                </div>
+            </div>
+            <div class="popular-col">
+                <img src="image/semperitpop.jpeg" alt="semperit">
+                <div class="layer">
+                    <a href="semperit.html">
+                        <h3> Semperit </h3>
+                    </a>
+                </div>
+            </div>
+            <div class="popular-col">
+                <img src="image/marblecake.jpeg" alt="marble cake">
+                <div class="layer">
+                    <a href="marblecake.html">
+                        <h3> Marble Cake </h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!------- Feedback -------->
+    <section class="about">
+        <h1> Sweet Bake Lovers </h1>
+        <p> What our top subscriber say about us</p>
+
+
+        <div class="row">
+            <div class="about-col">
+                <img src="image/image11.png" alt="bella">
+                <div>
+                    <h3> "Most coordinated baking website ever!" </h3>
+                    <p> Name: Bella Farhana </p>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="about-col">
+                <img src="image/image17.png" alt="Angel">
+                <div>
+                    <h3> "Used your cheese tart recipe and turned out delicious and I opened a business. Thank you!"
+                    </h3>
+                    <p> Name: Anonymously Angel </p>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="about-col">
+                <img src="image/image3.png" alt="Sarah">
+                <div>
+                    <h3> "Definitely the best among the best recipe :D" </h3>
+                    <p> Name: Sharifah Sarah </p>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!------- Call to Action -------->
+
+    <section class="cta">
+        <h1> Join our newsletter </h1>
+        <h4> Subscribe now to get new recipes from us! </h4>
+
+        <form action="#" onsubmit="subscribeFunction()">
+            <input type="email" class="email" placeholder="  Email" required>
+            <button type="submit" class="hero-btn">Subscribe</button>
+        </form>
+    </section>
+
+
+
+
+    <!------- Footer -------->
+    <section class="footer">
+        <div class="icons">
+            <a href="https://www.facebook.com/sweetbakeby4n/"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/sweetbake4n"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/sweet_bake_4n/"><i class="fa fa-instagram"></i></a>
+            <a href="mailto:sweetbakeby4n@gmail.com"><i class="fa fa-envelope-o"></i></a>
+        </div>
+
+        <body onload="lastUpdate()">
+            <p style="color: white;">Last updated: <span id="demo"></span></p>
+        </body>
+
+        <p style="font-style: italic;"> Copyright &copy; 2023 with <i class="fa fa-heart-o"></i> by 4N </p>
+
+
+    </section>
+
+
+
+    <!------ Back to Top button ------->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+    <!------- JAVASCRIPT -------->
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
